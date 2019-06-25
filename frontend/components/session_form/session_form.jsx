@@ -18,9 +18,10 @@ class SessionForm extends React.Component {
         this.props.processForm(user);
     }
 
-    updateInfo(info) {
+    update(info) {
         return e => this.setState({ [info]: e.target.value });
     }
+
     showErrors() {
         return (
             <ul>
@@ -35,7 +36,7 @@ class SessionForm extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    Welcome to Pawsitters!! from session form jsx>
+                    session form jsx
                 <br/>
                     {this.showErrors()}
                 <br/>
@@ -43,19 +44,19 @@ class SessionForm extends React.Component {
                     <label>Username:
                         <input type="text" 
                         placeholder="username" 
-                        onChange={this.updateInfo("username")}/>
+                        onChange={this.update("username")}/>
                     </label>
                 <br/>
                     <label>Password:
                         <input type="password"
                         placeholder="password"
-                        onChange={this.updateInfo("password")} />
+                        onChange={this.update("password")} />
                     </label>
                 <br/>
                     <label>Email:
                     <input type="text"
                             placeholder="email"
-                            onChange={this.updateInfo("email")} />
+                            onChange={this.update("email")} />
                     </label>
 
                     <input type="submit" value={this.props.formType}/>

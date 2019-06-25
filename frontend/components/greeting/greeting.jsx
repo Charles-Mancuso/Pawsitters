@@ -11,7 +11,7 @@ const Greeting = (props) => {
         )
     } else {
         return (
-            <div>
+            <div class="right-nav-bar">
                 <nav>
                     <Link to='/signup'>Sign Up</Link>
                     <Link to='/login'>Log In</Link>
