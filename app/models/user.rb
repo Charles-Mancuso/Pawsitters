@@ -5,15 +5,16 @@
 #  id                             :bigint           not null, primary key
 #  username                       :string           not null
 #  email                          :string           not null
-#  description                    :text             not null
-#  pet_type                       :string           not null
-#  hosting_preferences            :string           not null
-#  size_preference_for_hosting    :string           not null
-#  size_preference_for_travelling :string           not null
+#  description                    :text
+#  pet_type                       :string
+#  hosting_preferences            :string
+#  size_preference_for_hosting    :string
+#  size_preference_for_travelling :string
 #  password_digest                :string           not null
 #  session_token                  :string           not null
 #  created_at                     :datetime         not null
 #  updated_at                     :datetime         not null
+#
 
 
 class User < ApplicationRecord
