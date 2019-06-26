@@ -8,7 +8,7 @@ const msp = (state, ownProps) => {
     return {
         errors: state.errors,
         formType: 'signup',
-        navLink: <Link to="/login">login instead</Link>
+        // navLink: <Link to="/login">login instead</Link>
     };
 };
 

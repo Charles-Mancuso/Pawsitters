@@ -1,8 +1,19 @@
 .main-nav {
-	display:flex;
+	display: flex;
 	justify-content: space-between;
 	padding: 10px 0;
-	border-bottom: 1px solid black;
+}
+
+.background-image {
+	background-image: url("https://negativespace.co/wp-content/uploads/2018/01/negative-space-family-woman-children-dog-freestockpro-thumb-1.jpg");
+	background-color: #cccccc;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .left-nav > ul,
@@ -14,16 +25,17 @@
 .left-nav {
 	margin-left: 20px;
 	cursor: pointer;
-	text-transform: uppercase;
-	font-family: sans-serif;
+	font-family: Courier New;
 	font-weight: bold;
-	font-size: 11px;
+	font-size: 30px;
 	padding: 7px 9px;
-	transition: background-color 0.3s;
+	color: white;
+	text-decoration: none;
 }
 
 .right-nav > ul > li {
 	margin-left: 5px;
+	font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
 	cursor: pointer;
 }
 
@@ -33,10 +45,16 @@
 	transition: background-color 0.3s;
 }
 
-.left-nav span {
-	margin-left: 10px;
+.sign-up-button {
+	text-decoration: none;
+	color: white;
 }
 
-.right-nav i {
-	font-size: 16px;
+.log-in-button {
+	text-decoration: none;
+	color: white;
+}
+
+.left-nav i {
+	font-size: 15px;
 }
