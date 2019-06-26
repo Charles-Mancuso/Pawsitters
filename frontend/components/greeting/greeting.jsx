@@ -11,10 +11,19 @@ const Greeting = (props) => {
         )
     } else {
         return (
-            <div class="right-nav-bar">
-                <nav>
-                    <Link to='/signup'>Sign Up</Link>
-                    <Link to='/login'>Log In</Link>
+            <div className="main-nav">
+                <Link to="/" className="left-nav">
+                    <h3><i className='fas fa-paw'>sitters</i></h3>
+                </Link>
+                <nav className="right-nav">
+                        <ul>
+                        <li>
+                            <Link to='/signup'>Sign Up</Link>
+                        </li>
+                        <li>
+                            <Link to='/login'>Log In</Link>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         )

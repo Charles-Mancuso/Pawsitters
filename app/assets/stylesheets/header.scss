@@ -1,7 +1,42 @@
-.left-nav-bar {
-    display: flex;
+.main-nav {
+	display:flex;
+	justify-content: space-between;
+	padding: 10px 0;
+	border-bottom: 1px solid black;
 }
 
-.right-bar-nav {
+.left-nav > ul,
+.right-nav > ul {
+	display: flex;
+	align-items: center;
+}
 
+.left-nav {
+	margin-left: 20px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	padding: 7px 9px;
+	transition: background-color 0.3s;
+}
+
+.right-nav > ul > li {
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.right-nav > ul > li:last-of-type {
+	position: relative;
+	padding: 7px 9px;
+	transition: background-color 0.3s;
+}
+
+.left-nav span {
+	margin-left: 10px;
+}
+
+.right-nav i {
+	font-size: 16px;
 }

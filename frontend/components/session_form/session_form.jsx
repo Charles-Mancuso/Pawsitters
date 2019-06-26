@@ -36,8 +36,6 @@ class SessionForm extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    session form jsx
-                <br/>
                     {this.showErrors()}
                 <br/>
                 <div>
