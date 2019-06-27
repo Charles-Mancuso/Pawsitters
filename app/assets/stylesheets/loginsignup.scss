@@ -1,0 +1,117 @@
+.log-in-sign-up-background {
+    background-color: #E8EBED;
+    height: 800px;
+    display: flex;
+}
+
+.log-in-sign-up-form > li:first-of-type {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 70px;
+    margin-right: 55px;
+    text-align: center;
+}
+
+.log-in-sign-up-form {
+    margin-top: 15px;
+    margin-left: 55px;
+    color: #1B1F23;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+}
+
+.wrong-page-form {
+    border-top: 1px solid lightgray;
+    text-align: center;
+    width: 450px;
+    padding-top: 25px;
+}
+
+.user-input-info-box {
+    border: 0.5px solid lightgray;
+    border-radius: 4px;
+    width: 450px;
+    height: 35px;
+    background: rgb(232, 240, 254)
+}
+
+
+.log-in-sign-up-box {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 550px;
+    height: 600px;
+    color: black;
+    box-shadow: 0px 3px lightgray;
+    box-sizing: border-box;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.log-in-sign-up-button {
+    background: #14A96D;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    width: 450px;
+    height: 45px;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.main-nav-session {
+	display: flex;
+	justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.left-nav-session > ul,
+.right-nav-session > ul {
+	display: flex;
+	align-items: center;
+}
+
+.left-nav-session {
+	margin-left: 120px;
+	cursor: pointer;
+	font-family: Courier New;
+	font-weight: bold;
+	font-size: 35px;
+	padding: 0px, 9px;
+	color: #00bd70;
+	text-decoration: none;
+}
+
+.right-nav-session > ul > li:last-of-type {
+	margin-right: 200px;
+}
+
+.right-nav-session > ul > li {
+	margin-left: 5px;
+	font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+	cursor: pointer;
+	margin-right: 30px;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+
+.sign-up-button-session {
+	text-decoration: none;
+	color: #66727c
+}
+
+.log-in-button-session {
+	text-decoration: none;
+	color: #66727c
+}
+
+.left-nav-session i {
+	font-size: 15px;
+}

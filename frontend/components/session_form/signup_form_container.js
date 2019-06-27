@@ -7,8 +7,10 @@ import SessionForm from './session_form';
 const msp = (state, ownProps) => {
     return {
         errors: state.errors,
-        formType: 'signup',
-        // navLink: <Link to="/login">login instead</Link>
+        formType: 'Sign Up',
+        message: 'Sign Up for Pawsitters',
+        submitMessage: "Already have a Pawsitters account?",
+        submitLink: <Link to='/signup' className="sign-up-button-session">Sign up now</Link>
     };
 };
 

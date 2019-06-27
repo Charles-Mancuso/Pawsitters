@@ -22,7 +22,7 @@ const Greeting = (props) => {
                                 <Link to='/signup' className="sign-up-button">Sign Up</Link>
                             </li>
                             <li>
-                                <Link to='/login' className="log-in-button">Log In</Link>
+                                <Link to='/login' className="log-in-button">Sign In</Link>
                             </li>
                         </ul>
                     </nav>
