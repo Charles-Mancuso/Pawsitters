@@ -24,6 +24,8 @@
 .wrong-page-form {
     border-top: 1px solid lightgray;
     text-align: center;
+    font-size: 16px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
     width: 450px;
     padding-top: 25px;
 }
@@ -33,7 +35,9 @@
     border-radius: 4px;
     width: 450px;
     height: 35px;
-    background: rgb(232, 240, 254)
+    background: rgb(232, 240, 254);
+    outline: none;
+    padding-left: 10px;
 }
 
 
@@ -63,6 +67,16 @@
     font-size: 16px;
     margin-bottom: 30px;
 }
+
+// .log-in-sign-up-errors:active {
+//     border: 0.5px solid lightgray;
+//     border-radius: 4px;
+//     width: 450px;
+//     height: 35px;
+//     background: rgb(232, 240, 254);
+//     outline: none;
+//     padding: 10px;
+// }
 
 .main-nav-session {
 	display: flex;

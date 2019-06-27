@@ -8,7 +8,8 @@ class SessionForm extends React.Component {
         super(props);
         this.state = {
             username: "",
-            password: ""
+            password: "",
+            email: ""
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -55,7 +56,9 @@ class SessionForm extends React.Component {
                     <div className="log-in-sign-up-box">
                         <div>
                             <form onSubmit={this.handleSubmit}>
+                            <div className="log-in-sign-up-errors">
                                 {this.showErrors()}
+                            </div>
                             <br/>
                             <ul className="log-in-sign-up-form">
                                 <li className="log-in-sign-up-message">
@@ -66,7 +69,6 @@ class SessionForm extends React.Component {
                                     <br/>
                                     <input type="text" 
                                     className="user-input-info-box"
-                                    placeholder="  username" 
                                     onChange={this.update("username")}/>
                                 </li>
                                 <br/>
@@ -74,7 +76,6 @@ class SessionForm extends React.Component {
                                     <br/>
                                     <input type="password"
                                     className="user-input-info-box"
-                                    placeholder="  password"
                                     onChange={this.update("password")} />
                                     </li>
                                 <br/>
@@ -82,7 +83,6 @@ class SessionForm extends React.Component {
                                     <br/>
                                     <input type="text"
                                     className="user-input-info-box"
-                                    placeholder="  email"
                                     onChange={this.update("email")} />
                                 </li>
                                 <li>
