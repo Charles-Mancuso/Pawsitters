@@ -7,13 +7,13 @@
 .log-in-sign-up-form > li:first-of-type {
     font-size: 40px;
     font-weight: 900;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     margin-right: 55px;
     text-align: center;
 }
 
 .log-in-sign-up-form {
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 55px;
     color: #1B1F23;
     font-weight: 400;
@@ -68,14 +68,24 @@
     margin-bottom: 30px;
 }
 
-// .log-in-sign-up-errors:active {
-//     border: 0.5px solid lightgray;
+// .log-in-sign-up-errors:before {
+//     display: none;
+//     background: none;
+// }
+
+// .log-in-sign-up-errors {
+//     color: red;
+//     position: relative;
+//     // background: #14A96D;
+//     border: none;
 //     border-radius: 4px;
+//     margin-top: 15px;
 //     width: 450px;
-//     height: 35px;
-//     background: rgb(232, 240, 254);
-//     outline: none;
-//     padding: 10px;
+//     height: 45px;
+//     color: black;
+//     font-size: 16px;
+//     margin-bottom: 30px;
+
 // }
 
 .main-nav-session {

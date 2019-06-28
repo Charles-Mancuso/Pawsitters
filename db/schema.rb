@@ -10,19 +10,45 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_24_234427) do
+ActiveRecord::Schema.define(version: 2019_06_28_010535) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "sitters", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.string "city", null: false
+    t.string "state", null: false
+    t.string "country", null: false
+    t.integer "zip", null: false
+    t.string "title", null: false
+    t.string "sitter_bio", null: false
+    t.string "home_type", null: false
+    t.boolean "is_boarding", default: false, null: false
+    t.boolean "is_sitting", default: false, null: false
+    t.boolean "is_visiting", default: false, null: false
+    t.boolean "is_daycare", default: false, null: false
+    t.boolean "is_walking", default: false, null: false
+    t.integer "boarding_price"
+    t.integer "sitting_price"
+    t.integer "daycare_price"
+    t.integer "visiting_price"
+    t.integer "walking_price"
+    t.boolean "is_small_dog", default: false, null: false
+    t.boolean "is_medium_dog", default: false, null: false
+    t.boolean "is_large_dog", default: false, null: false
+    t.boolean "is_giant_dog", default: false, null: false
+    t.float "lat"
+    t.float "lng"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username", null: false
     t.string "email", null: false
     t.text "description"
     t.string "pet_type"
-    t.string "hosting_preferences"
-    t.string "size_preference_for_hosting"
-    t.string "size_preference_for_travelling"
     t.string "password_digest", null: false
     t.string "session_token", null: false
     t.datetime "created_at", null: false

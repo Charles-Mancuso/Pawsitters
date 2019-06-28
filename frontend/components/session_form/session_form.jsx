@@ -56,13 +56,13 @@ class SessionForm extends React.Component {
                     <div className="log-in-sign-up-box">
                         <div>
                             <form onSubmit={this.handleSubmit}>
-                            <div className="log-in-sign-up-errors">
-                                {this.showErrors()}
-                            </div>
-                            <br/>
                             <ul className="log-in-sign-up-form">
                                 <li className="log-in-sign-up-message">
                                     {this.props.message}
+                                </li>
+                                <br/>
+                                <li className="log-in-sign-up-errors">
+                                    {this.showErrors()}
                                 </li>
                                 <br/>
                                 <li>Username
