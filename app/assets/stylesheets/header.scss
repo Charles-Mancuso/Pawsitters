@@ -1,7 +1,7 @@
 .main-nav {
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 0;
+	padding: 5px 0;
 }
 
 .background-image {
@@ -28,21 +28,20 @@
 	font-family: Courier New;
 	font-weight: bold;
 	font-size: 35px;
-	padding: 0px, 9px;
+	padding: 0px, 4px;
 	color: #FFFFFF;
 	text-decoration: none;
 }
 
 .right-nav > ul > li:last-of-type {
-	margin-right: 200px;
+	margin-right: 193px;
 }
 
 .right-nav > ul > li {
-	margin-left: 5px;
 	font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
 	cursor: pointer;
-	margin-right: 30px;
-	margin-top: 10px;
+	margin-right: 20px;
+	margin-top: 8px;
 	font-size: 14px;
 }
 
@@ -54,6 +53,17 @@
 .log-in-button {
 	text-decoration: none;
 	color: #FFFFFF;
+}
+
+
+.demo-login-button {
+	text-decoration: none;
+	color: #FFFFFF;
+	background: none;
+	border: none;
+	font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+	cursor: pointer;
+	font-size: 14px;
 }
 
 .left-nav i {

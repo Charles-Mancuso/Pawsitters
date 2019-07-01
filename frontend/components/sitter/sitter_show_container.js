@@ -1,4 +1,3 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import { fetchSitter } from '../../actions/sitter_actions';
 import SitterShow from './sitter_show';

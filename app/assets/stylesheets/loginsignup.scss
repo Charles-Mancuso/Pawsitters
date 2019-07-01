@@ -21,6 +21,38 @@
     font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
 }
 
+.log-in-sign-up-form-login > li:first-of-type {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 126px;
+    margin-right: 55px;
+    text-align: center;
+}
+
+.log-in-sign-up-form-login {
+    margin-top: 25px;
+    margin-left: 55px;
+    color: #1B1F23;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+}
+
+.errors { 
+    position: fixed;
+    bottom: 20px;
+    width: 460px;
+    background-color: #F2DEDE;
+    border-color: #EBCCD1;
+    color: #E5281A;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    font-size: 14px;
+    border: 1px solid transparent;
+    margin-bottom: 500px;
+}
+
 .wrong-page-form {
     border-top: 1px solid lightgray;
     text-align: center;
@@ -40,7 +72,6 @@
     padding-left: 10px;
 }
 
-
 .log-in-sign-up-box {
     margin-top: 40px;
     margin-bottom: 100px;
@@ -53,7 +84,7 @@
     box-shadow: 0px 3px lightgray;
     box-sizing: border-box;
     text-align: left;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .log-in-sign-up-button {
@@ -68,25 +99,9 @@
     margin-bottom: 30px;
 }
 
-// .log-in-sign-up-errors:before {
-//     display: none;
-//     background: none;
-// }
-
-// .log-in-sign-up-errors {
-//     color: red;
-//     position: relative;
-//     // background: #14A96D;
-//     border: none;
-//     border-radius: 4px;
-//     margin-top: 15px;
-//     width: 450px;
-//     height: 45px;
-//     color: black;
-//     font-size: 16px;
-//     margin-bottom: 30px;
-
-// }
+.log-in-sign-up-button {
+    cursor: pointer;
+}
 
 .main-nav-session {
 	display: flex;
@@ -122,18 +137,17 @@
 	cursor: pointer;
 	margin-right: 30px;
 	margin-top: 10px;
-	font-size: 14px;
+    font-size: 14px;
 }
-
 
 .sign-up-button-session {
 	text-decoration: none;
-	color: #66727c
+	color: #66727C;
 }
 
 .log-in-button-session {
 	text-decoration: none;
-	color: #66727c
+	color: #66727C;
 }
 
 .left-nav-session i {

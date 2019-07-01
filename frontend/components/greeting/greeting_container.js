@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { logout } from '../../actions/session_actions';
+import { logout, login } from '../../actions/session_actions';
 import Greeting from './greeting';
 
 const msp = (state) => {
@@ -8,7 +8,8 @@ const msp = (state) => {
 };
 
 const mdp = dispatch => ({
-    logout: () => dispatch(logout())
+    logout: () => dispatch(logout()),
+    processForm: (user) => dispatch(login(user))
 });
 
 export default connect(msp, mdp)(Greeting);

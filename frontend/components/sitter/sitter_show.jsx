@@ -12,9 +12,7 @@ class SitterShow extends React.Component {
     render() {
         const { sitter } = this.props
         if (!sitter) return null;
-
-        
-debugger
+                               
         return (
             <div>
                 <h1>{sitter.title}</h1>

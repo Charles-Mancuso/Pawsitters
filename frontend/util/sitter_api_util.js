@@ -1,8 +1,7 @@
-export const fetchSitters = (data) => {
+export const fetchSitters = () => {
     return $.ajax({
         method: 'GET',
         url: '/api/sitters',
-        data
     });
 };
 

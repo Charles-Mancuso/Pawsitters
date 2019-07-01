@@ -13,8 +13,8 @@ export const receiveSitter = (sitter) => ({
     sitter
 });
 
-export const fetchSitters = (allSitters) => dispatch => (
-    SitterUtil.fetchSitters(allSitters).then(sitters => (dispatch(receiveSitters(sitters))))
+export const fetchSitters = () => dispatch => (
+    SitterUtil.fetchSitters().then(sitters => (dispatch(receiveSitters(sitters))))
 )
 
 export const fetchSitter = (id) => dispatch => (

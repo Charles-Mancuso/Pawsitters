@@ -11,11 +11,12 @@ ActiveRecord::Base.transaction do
   User.destroy_all
   Sitter.destroy_all
 
-  charles = User.create!(username: "charles", password: "charles", email: "charles@yahoo.com")
-  jennifer = User.create!(username: "jennifer", password: "jennifer", email: "jennifer@yahoo.com")
-  shelley = User.create!(username: "shelley", password: "shelley", email: "shelley@yahoo.com")
-  amanda = User.create!(username: "amanda", password: "amanda", email: "amanda@yahoo.com")
-  trevor = User.create!(username: "trevor", password: "trevor", email: "trevor@yahoo.com")
+  charles = User.create!(zip_code: 95050, password: "charles", email: "charles@yahoo.com")
+  jennifer = User.create!(zip_code: 20403, password: "jennifer", email: "jennifer@yahoo.com")
+  shelley = User.create!(zip_code: 43242, password: "shelley", email: "shelley@yahoo.com")
+  amanda = User.create!(zip_code: 23123, password: "amanda", email: "amanda@yahoo.com")
+  trevor = User.create!(zip_code: 12312, password: "trevor", email: "trevor@yahoo.com")
+  demo = User.create!(zip_code: 12345, password: "demouser", email: "demouser@yahoo.com")
 
   sitter1 = Sitter.create!(
     user_id: charles.id, 
