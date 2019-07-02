@@ -1,0 +1,48 @@
+.sitter-show-img-container {
+  width: 264px;
+  height: 225px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+.sitter-show-img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.sitter-show-top-info-container {
+  width: 486px;
+  height: 225px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  float: left;
+}
+
+.sitter-show-name {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.sitter-show-services-container {
+  border: 1px solid blue;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  float: left;
+}
+
+.highlight-these {
+    color: black;
+    font-weight: 900;
+}
+
+.gray-these {
+    color: gray;
+}

@@ -32,6 +32,7 @@ class Api::SittersController < ApplicationController
 
     def sitter_params
         params.require(:sitter).permit(
+            :image_url,
             :user_id, 
             :city,
             :state,
