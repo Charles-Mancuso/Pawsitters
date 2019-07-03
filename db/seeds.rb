@@ -10,6 +10,7 @@ ActiveRecord::Base.transaction do
 
   User.destroy_all
   Sitter.destroy_all
+  Booking.destroy_all
 
   charles = User.create!(zip_code: 95050, password: "charles", email: "charles@yahoo.com")
   jennifer = User.create!(zip_code: 20403, password: "jennifer", email: "jennifer@yahoo.com")
@@ -105,4 +106,17 @@ ActiveRecord::Base.transaction do
     lng: -122.965520
   )
 
+  Booking.create!(
+    user_id: charles.id,
+    sitter_id: sitter1.id,
+    start_date: "20190129",
+    end_date: "20190125"
+  )
+
+  Booking.create!(
+    user_id: charles.id,
+    sitter_id: sitter1.id,
+    start_date: "20190217",
+    end_date: "20190221"
+  )
 end

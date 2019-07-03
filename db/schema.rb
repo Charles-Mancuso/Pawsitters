@@ -10,10 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_02_173305) do
+ActiveRecord::Schema.define(version: 2019_07_03_040937) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bookings", force: :cascade do |t|
+    t.integer "sitter_id", null: false
+    t.integer "user_id", null: false
+    t.date "start_date", null: false
+    t.date "end_date", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["end_date"], name: "index_bookings_on_end_date"
+    t.index ["sitter_id"], name: "index_bookings_on_sitter_id"
+    t.index ["start_date"], name: "index_bookings_on_start_date"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
+  end
 
   create_table "sitters", force: :cascade do |t|
     t.integer "user_id", null: false

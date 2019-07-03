@@ -14,4 +14,4 @@ const mdp = dispatch => {
     };
 };
 
-export default connect(msp, mdp)(SitterShow)
+export default connect(msp, mdp)(SitterShow);
