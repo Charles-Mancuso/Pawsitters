@@ -1,3 +1,6 @@
+.sitter-show-main-container {
+    // display: flex;
+}
 .sitter-show-img-container {
   width: 264px;
   height: 225px;
@@ -15,7 +18,7 @@
 }
 
 .sitter-show-top-info-container {
-  width: 486px;
+  width: 800px;
   height: 225px;
   border: 1px solid blue;
   box-sizing: border-box;
@@ -27,16 +30,83 @@
 .sitter-show-name {
     font-weight: 900;
     font-size: 40px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    color: #1B1F23;
+}
+
+.sitter-show-city {
+    color: #40484F;
+    font-size: 16px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    font-weight: 900;
 }
 
 .sitter-show-services-container {
+  width: 700px;
   border: 1px solid blue;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   position: relative;
   float: left;
+  background-color: #F4F5F6;
+  border-radius: 4px;
+  padding: 20px;
 }
+
+.sitter-show-services {
+    justify-content: space-between;
+    display: flex;
+}
+
+.sitter-show-services-header {
+    display: flex;
+    font-weight: 900;
+    font-size: 32px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    color: #1B1F23;
+}
+
+.sitter-show-services-title {
+    display: flex;
+    margin-top: 7px;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    color: #1B1F23;
+}
+ 
+.sitter-show-services-price {
+    display: flex;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-size: 28px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    color: #1B1F23;
+}
+.sitter-show-services-description {
+    display: flex;
+    margin-top: 9px;
+    box-sizing: border-box;
+    color: #66727C;
+    font-size: 14px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+}
+
+.sitter-show-services-price-description {
+    display: flex;
+    box-sizing: border-box;
+    color: #66727C;
+    font-size: 14px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+}
+
+.sitter-show-travel-container {
+    box-sizing: border-box;
+    display: flex;
+}
+
 
 .highlight-these {
     color: black;

@@ -10,11 +10,15 @@ class SitterShow extends React.Component {
   boarding() {
     if (this.props.sitter.is_boarding === true) {
       return (
-        <div>
-          <div>Dog Boarding</div>
-          <div>in the sitter's home</div>
-          <div>${this.props.sitter.boarding_price}</div>
-          <div>per night</div>
+        <div className="sitter-show-services">
+          <div className="sitter-show-services-one">
+            <div className="sitter-show-services-title">Dog Boarding</div>
+            <div className="sitter-show-services-description">in the sitter's home</div>
+          </div>
+          <div className="sitter-show-services-two">
+            <div className="sitter-show-services-price">${this.props.sitter.boarding_price}</div>
+            <div className="sitter-show-services-price-description">per night</div>
+          </div>
         </div>
       );
     } else {
@@ -25,11 +29,15 @@ class SitterShow extends React.Component {
   sitting() {
     if (this.props.sitter.is_sitting === true) {
       return (
-        <div>
-          <div>House Sitting</div>
-          <div>in your home</div>
-          <div>${this.props.sitter.sitting_price}</div>
-          <div>per night</div>
+        <div className="sitter-show-services">
+          <div className="sitter-show-services-one">
+            <div className="sitter-show-services-title">House Sitting</div>
+            <div className="sitter-show-services-description">in your home</div>
+          </div>
+          <div className="sitter-show-services-two">
+            <div className="sitter-show-services-price">${this.props.sitter.sitting_price}</div>
+            <div className="sitter-show-services-price-description">per night</div>
+          </div>
         </div>
       );
     } else {
@@ -40,11 +48,15 @@ class SitterShow extends React.Component {
   visiting() {
     if (this.props.sitter.is_visiting === true) {
       return (
-        <div>
-          <div>Drop-In Visits</div>
-          <div>30-minute check-ins</div>
-          <div>${this.props.sitter.visiting_price}</div>
-          <div>per visit</div>
+        <div className="sitter-show-services">
+          <div className="sitter-show-services-one">
+            <div className="sitter-show-services-title">Drop-In Visits</div>
+            <div className="sitter-show-services-description">30-minute check-ins</div>
+          </div>
+          <div className="sitter-show-services-two">
+            <div className="sitter-show-services-price">${this.props.sitter.visiting_price}</div>
+            <div className="sitter-show-services-price-description">per visit</div>
+          </div>
         </div>
       );
     } else {
@@ -55,11 +67,15 @@ class SitterShow extends React.Component {
   daycare() {
     if (this.props.sitter.is_daycare === true) {
       return (
-        <div>
-          <div>Doggy Day Care</div>
-          <div>in the sitter's home</div>
-          <div>${this.props.sitter.daycare_price}</div>
-          <div>per day</div>
+        <div className="sitter-show-services">
+          <div className="sitter-show-services-one">
+            <div className="sitter-show-services-title">Doggy Day Care</div>
+            <div className="sitter-show-services-description">in the sitter's home</div>
+          </div>
+          <div className="sitter-show-services-two">
+            <div className="sitter-show-services-price">${this.props.sitter.daycare_price}</div>
+            <div className="sitter-show-services-price-description">per day</div>
+          </div>
         </div>
       );
     } else {
@@ -70,11 +86,15 @@ class SitterShow extends React.Component {
   walking() {
     if (this.props.sitter.is_walking === true) {
       return (
-        <div>
-          <div>Dog Walking</div>
-          <div>30-minute walks</div>
-          <div>${this.props.sitter.walking_price}</div>
-          <div>per walk</div>
+        <div className="sitter-show-services">
+          <div className="sitter-show-services-one">
+            <div className="sitter-show-services-title">Dog Walking</div>
+            <div className="sitter-show-services-description">30-minute walks</div>
+          </div>
+          <div className="sitter-show-services-two">
+            <div className="sitter-show-services-price">${this.props.sitter.walking_price}</div>
+            <div className="sitter-show-services-price-description">per walk</div>
+          </div>
         </div>
       );
     } else {
@@ -211,7 +231,7 @@ class SitterShow extends React.Component {
           <span className="sitter-show-city">{sitter.city}</span>
         </div>
         <div className="sitter-show-services-container">
-          <div>Services</div>
+          <div className="sitter-show-services-header">Services</div>
           {this.boarding()}
           {this.sitting()}
           {this.visiting()}
@@ -225,8 +245,8 @@ class SitterShow extends React.Component {
           <br />
           {sitter.sitter_bio}
         </div>
-        <div>
-          Traveling Preferences
+        <div className="sitter-show-travel-container">
+          <div className="sitter-show-travel-header">Traveling Preferences</div>
           {this.trav_pref()}
         </div>
       </div>
