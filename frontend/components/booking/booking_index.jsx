@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import BookingIndexItem from "./booking_index_item";
+import BookingIndexItem from "./booking_index_item_container";
 
 class BookingIndex extends React.Component {
     
@@ -12,7 +12,7 @@ class BookingIndex extends React.Component {
         return (
             <div>
                 <ul>
-                    {bookings.map((booking, index) => <BookingIndexItem key={booking.id} booking={booking} index={index} />)}
+                    {bookings.map(booking => <BookingIndexItem key={booking.id} booking={booking} />)}
                 </ul>
             </div>
         );

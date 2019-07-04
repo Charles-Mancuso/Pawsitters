@@ -58,9 +58,7 @@ ActiveRecord::Base.transaction do
     country: "United States",
     zip: 95050,
     title: "Can't wait to take care of your dogs!",
-    sitter_bio: "Dog sitting isn't just a hobby, it's a lifestyle. You either do or you don't.
-                 These other dog sitters need to get on my level. If you book me, you're doing
-                 the right thing.",
+    sitter_bio: "Dog sitting isn't just a hobby, it's a lifestyle. You either do or you don't. These other dog sitters need to get on my level. If you book me, you're doing the right thing.",
     home_type: "Apartment",
     is_boarding: true,
     is_sitting: true,
@@ -118,5 +116,12 @@ ActiveRecord::Base.transaction do
     sitter_id: sitter1.id,
     start_date: "20190217",
     end_date: "20190221"
+  )
+
+  Booking.create!(
+    user_id: charles.id,
+    sitter_id: sitter2.id,
+    start_date: "20190310",
+    end_date: "20190314"
   )
 end

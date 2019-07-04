@@ -4,9 +4,9 @@ export const RECEIVE_BOOKINGS = "RECEIVE_BOOKINGS";
 export const RECEIVE_BOOKING = "RECEIVE_BOOKING";
 export const REMOVE_BOOKING = "REMOVE_BOOKING";
 
-export const receiveBookings = (bookings) => ({
+export const receiveBookings = (payload) => ({
     type: RECEIVE_BOOKINGS,
-    bookings
+    payload
 });
 
 export const receiveBooking = (booking) => ({
@@ -20,7 +20,7 @@ export const removeBooking = (bookingId) => ({
 });
 
 export const fetchBookings = () => dispatch => (
-    BookingUtil.fetchBookings().then(bookings => dispatch(receiveBookings(bookings)))
+    BookingUtil.fetchBookings().then(payload => dispatch(receiveBookings(payload)))
 )
 
 export const fetchBooking = (bookingId) => dispatch => (
