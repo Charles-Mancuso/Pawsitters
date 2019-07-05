@@ -4,7 +4,7 @@ import SitterShow from './sitter_show';
 
 const msp = (state, ownProps) => {
     return {
-        sitter: state.entities.sitters[ownProps.match.params.id],
+        sitter: state.entities.sitters[ownProps.match.params.sitterId],
     };
 };
 

@@ -45,6 +45,8 @@ ActiveRecord::Base.transaction do
     is_medium_dog: false,
     is_large_dog: false,
     is_giant_dog: false,
+    response_time: "thirty minutes or less",
+    response_rate: 99,
     lat: 37.341000,
     lng: -121.965520
   )
@@ -74,6 +76,8 @@ ActiveRecord::Base.transaction do
     is_medium_dog: false,
     is_large_dog: false,
     is_giant_dog: true,
+    response_time: "a few hours",
+    response_rate: 50,
     lat: 36.341000,
     lng: -122.965520
   )
@@ -100,27 +104,230 @@ ActiveRecord::Base.transaction do
     is_medium_dog: false,
     is_large_dog: false,
     is_giant_dog: true,
+    response_time: "a few minutes",
+    response_rate: 100,
+    lat: 36.341000,
+    lng: -122.965520
+  )
+
+  sitter4 = Sitter.create!(
+    user_id: jennifer.id, 
+    image_url: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    name: "Kelly",
+    city: "San Jose",
+    state: "California",
+    country: "United States",
+    zip: 95148,
+    title: "I like to take care of dogs!",
+    sitter_bio: "Hello! My name is Kelly and I love to take care of dogs. They have always been a passion of mine and I will always love doing it. You won't regret booking me!",
+    home_type: "House",
+    is_boarding: true,
+    is_sitting: true,
+    is_visiting: true,
+    is_daycare: false,
+    is_walking: false,
+    boarding_price: 55,
+    sitting_price: 30,
+    visiting_price: 30,
+    is_small_dog: false,
+    is_medium_dog: false,
+    is_large_dog: true,
+    is_giant_dog: false,
+    response_time: "thirty minutes or less",
+    response_rate: 78,
+    lat: 36.341000,
+    lng: -122.965520
+  )
+
+    sitter5 = Sitter.create!(
+    user_id: jennifer.id, 
+    image_url: "https://static.boredpanda.com/blog/wp-content/uploads/2018/12/ai-image-generation-fake-faces-people-nvidia-5c18b20b472c2__700.jpg",
+    name: "Josh",
+    city: "Sacramento",
+    state: "California",
+    country: "United States",
+    zip: 95616,
+    title: "Choose me!",
+    sitter_bio: "Some of my hobbies are coding, playing video games, and playing tennis. When your dog stays with me, they will definitely have a great, active time. If they like to run, we can go running. If they like the dog park, we will go to the dog park. Whatever your dog wants, I will provide!",
+    home_type: "House",
+    is_boarding: true,
+    is_sitting: true,
+    is_visiting: false,
+    is_daycare: true,
+    is_walking: false,
+    boarding_price: 60,
+    sitting_price: 30,
+    daycare_price: 30,
+    is_small_dog: false,
+    is_medium_dog: false,
+    is_large_dog: false,
+    is_giant_dog: true,
+    response_time: "a few minutes",
+    response_rate: 100,
+    lat: 36.341000,
+    lng: -122.965520
+  )
+
+    sitter6 = Sitter.create!(
+    user_id: jennifer.id, 
+    image_url: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    name: "Owen",
+    city: "Davis",
+    state: "California",
+    country: "United States",
+    zip: 95618,
+    title: "Dogs are friends, not food!",
+    sitter_bio: "I'm a vegan. Need I say more? Well, I will. I like to sew. I like to watch paint dry. I will watch your dog. They better not slobber, though. I hate slobber",
+    home_type: "House",
+    is_boarding: true,
+    is_sitting: false,
+    is_visiting: false,
+    is_daycare: false,
+    is_walking: false,
+    boarding_price: 20,
+    is_small_dog: false,
+    is_medium_dog: false,
+    is_large_dog: false,
+    is_giant_dog: true,
+    response_time: "a few minutes",
+    response_rate: 100,
+    lat: 36.341000,
+    lng: -122.965520
+  )
+
+    sitter7 = Sitter.create!(
+    user_id: jennifer.id, 
+    image_url: "https://static1.squarespace.com/static/5761b510356fb07cfd0a7201/5761bf36893fc0e91240762c/5b569f0f352f53339a672dc0/1535567195344/flower.jpg?format=1000w",
+    name: "Freida",
+    city: "Davis",
+    state: "California",
+    country: "United States",
+    zip: 95616,
+    title: "book me please I need money for college",
+    sitter_bio: "My name is Freida and I'm so in love with dogs. If you choose me, your dog will be taken
+                 care of as if they were my own. They will be in great hands!",
+    home_type: "House",
+    is_boarding: true,
+    is_sitting: true,
+    is_visiting: true,
+    is_daycare: true,
+    is_walking: true,
+    boarding_price: 45,
+    sitting_price: 30,
+    visiting_price: 30,
+    daycare_price: 30,
+    walking_price: 40,
+    is_small_dog: false,
+    is_medium_dog: false,
+    is_large_dog: false,
+    is_giant_dog: true,
+    response_time: "one hour or more",
+    response_rate: 33,
+    lat: 36.341000,
+    lng: -122.965520
+  )
+
+    sitter8 = Sitter.create!(
+    user_id: jennifer.id, 
+    image_url: "https://amp.businessinsider.com/images/589dbb873149a101788b4c85-750-562.jpg",
+    name: "Ashley",
+    city: "San Francisco",
+    state: "California",
+    country: "United States",
+    zip: 94818,
+    title: "Let me take care of your dog!",
+    sitter_bio: "Ever since I was a child, watching dogs has been a huge passion of mine. Make my dreams come true and let me take care of your dogs for you! They will get 24/7 constant attention because I live at home. Will be active as well",
+    home_type: "House",
+    is_boarding: true,
+    is_sitting: false,
+    is_visiting: false,
+    is_daycare: false,
+    is_walking: true,
+    boarding_price: 35,
+    walking_price: 20,
+    is_small_dog: false,
+    is_medium_dog: true,
+    is_large_dog: false,
+    is_giant_dog: false,
+    response_time: "between ten to fifteen minutes",
+    response_rate: 100,
+    lat: 36.341000,
+    lng: -122.965520
+  )
+
+    sitter9 = Sitter.create!(
+    user_id: jennifer.id, 
+    image_url: "https://ewedit.files.wordpress.com/2019/03/cagleheadshot.jpg",
+    name: "Paul",
+    city: "San Diego",
+    state: "California",
+    country: "United States",
+    zip: 92648,
+    title: "I LOVE DOGS",
+    sitter_bio: "My name is Paul and I'm a politician. I LOVE DOGS. unfortunately I won't be home much because I always have work to do, but... I LOVE DOGS. Can't go wrong with booking me seeing how much I LOVE DOGS. Please choose me as your sitter! And also vote for me.",
+    home_type: "House",
+    is_boarding: true,
+    is_sitting: false,
+    is_visiting: false,
+    is_daycare: false,
+    is_walking: false,
+    boarding_price: 99,
+    is_small_dog: true,
+    is_medium_dog: false,
+    is_large_dog: false,
+    is_giant_dog: false,
+    response_time: "two hours or more",
+    response_rate: 10,
+    lat: 36.341000,
+    lng: -122.965520
+  )
+
+    sitter10 = Sitter.create!(
+    user_id: jennifer.id, 
+    image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1vGKu6zFxIDRhuIvQIIBIzYj3JCBdLDpjp4u5DUJHw_vtnhtNLg",
+    name: "Greg",
+    city: "Los Angeles",
+    state: "California",
+    country: "United States",
+    zip: 95055,
+    title: "Hey, I'm Greg",
+    sitter_bio: "My name is Greg. I'm 65 and just recently retired. Looking to live a relaxing life, looking after and taking care of your dogs. I can handle just about anything. Book me before it's too late!",
+    home_type: "House",
+    is_boarding: true,
+    is_sitting: true,
+    is_visiting: false,
+    is_daycare: true,
+    is_walking: false,
+    boarding_price: 40,
+    sitting_price: 30,
+    daycare_price: 20,
+    is_small_dog: false,
+    is_medium_dog: false,
+    is_large_dog: false,
+    is_giant_dog: true,
+    response_time: "a few minutes",
+    response_rate: 100,
     lat: 36.341000,
     lng: -122.965520
   )
 
   Booking.create!(
-    user_id: charles.id,
+    user_id: demo.id,
     sitter_id: sitter1.id,
     start_date: "20190129",
     end_date: "20190125"
   )
 
   Booking.create!(
-    user_id: charles.id,
-    sitter_id: sitter1.id,
+    user_id: demo.id,
+    sitter_id: sitter2.id,
     start_date: "20190217",
     end_date: "20190221"
   )
 
   Booking.create!(
-    user_id: charles.id,
-    sitter_id: sitter2.id,
+    user_id: demo.id,
+    sitter_id: sitter3.id,
     start_date: "20190310",
     end_date: "20190314"
   )

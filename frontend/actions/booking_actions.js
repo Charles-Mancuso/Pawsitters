@@ -20,22 +20,27 @@ export const removeBooking = (bookingId) => ({
 });
 
 export const fetchBookings = () => dispatch => (
-    BookingUtil.fetchBookings().then(payload => dispatch(receiveBookings(payload)))
+    BookingUtil.fetchBookings()
+    .then(payload => dispatch(receiveBookings(payload)))
 )
 
 export const fetchBooking = (bookingId) => dispatch => (
-    BookingUtil.fetchBooking(bookingId).then(payload => dispatch(receiveBooking(payload)))
+    BookingUtil.fetchBooking(bookingId)
+    .then(payload => dispatch(receiveBooking(payload)))
 )
 
-export const createBooking = (booking, sitterId) => (
-    BookingUtil.createBooking(booking, sitterId).then(booking => dispatch(receiveBooking(booking)))
+export const createBooking = (startDate, endDate, sitterId) => dispatch => (
+    BookingUtil.createBooking(startDate, endDate, sitterId)
+    .then(booking => dispatch(receiveBooking(booking)))
 )
 
-export const updateBooking = (booking) => dispatch => (
-    BookingUtil.updateBooking(booking).then(booking => dispatch(receiveBooking(booking)))
+export const updateBooking = (startDate, endDate, sitterId, bookingId) => dispatch => (
+    BookingUtil.updateBooking(startDate, endDate, sitterId, bookingId)
+    .then(booking => dispatch(receiveBooking(booking)))
 )
 
 export const deleteBooking = (bookingId) => dispatch => (
-    BookingUtil.deleteBooking(bookingId).then(bookingId => dispatch(removeBooking(bookingId)))
+    BookingUtil.deleteBooking(bookingId)
+    .then(bookingId => dispatch(removeBooking(bookingId)))
 )
 

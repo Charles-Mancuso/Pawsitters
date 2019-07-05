@@ -1,0 +1,111 @@
+.your-bookings {
+    padding-left: 40px;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    color: #1B1F23;
+}
+
+.booking-container {
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-top: 30px;
+    display: flex;
+}
+
+.booking-img-container {
+    padding-top: 15px;
+    box-sizing: border-box;
+    padding-left: 150px;
+    width: 30%;
+}
+
+.booking-img {
+    border-radius: 50%;
+    height: 225px;
+    width: 225px;
+    display: flex;
+    position: relative;
+}
+
+.booking-info-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.booking-sitter-name {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    color: #1B1F23;
+    padding-bottom: 5px;
+}
+
+.booking-location-header {
+    color: #1B1F23;
+    font-size: 16px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    font-weight: 900;
+}
+
+.booking-location {
+    color: #66727C;
+    font-size: 14px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+}
+
+.booking-date-header {
+    color: #1B1F23;
+    font-size: 16px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    font-weight: 900;
+}
+
+.booking-startdate {
+    color: #66727C;
+    font-size: 14px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+}
+
+.booking-delete-button-container {
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+.booking-delete-button {
+    width: 100%;
+    text-align: center;
+    color: #1B1F23;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.book-update-button {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.edit-date-header {
+    color: #1B1F23;
+    font-size: 16px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    font-weight: 900;
+}
+
+.book-update-actual-button {
+    width: 100%;
+    text-align: center;
+    color: #1B1F23;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.book-update-actual-button-container {
+    padding-top: 5px;
+}

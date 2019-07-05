@@ -12,19 +12,19 @@ export const fetchBooking = (bookingId) => {
     });
 };
 
-export const createBooking = (booking, sitterId) => {
+export const createBooking = (start_date, end_date, sitter_id) => {
     return $.ajax({
         method: 'POST',
-        url: `api/sitters/${sitterId}/bookings`,
-        data: { booking }
+        url: `api/sitters/${sitter_id}/bookings`,
+        data: { booking: {start_date, end_date, sitter_id } }
     });
 };
 
-export const updateBooking = (booking) => {
+export const updateBooking = (start_date, end_date, sitter_id, booking_id) => {
     return $.ajax({
         method: 'PATCH',
-        url: `api/bookings/${booking.id}`,
-        data: { booking }
+        url: `api/bookings/${booking_id}`,
+        data: { booking: { start_date, end_date, sitter_id } }
     });
 };
 

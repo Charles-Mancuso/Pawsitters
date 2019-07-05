@@ -14,4 +14,6 @@ json.sitters do
     end
 end
 
+# json.partial! 'api/users/user', user: @user
+
 

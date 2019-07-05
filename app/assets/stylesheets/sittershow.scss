@@ -1,62 +1,114 @@
 .sitter-show-main-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.sitter-show-img-and-top-info {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .sitter-show-img-container {
-  width: 264px;
-  height: 225px;
-  border: 1px solid blue;
+  padding-left: 200px;
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-bottom: 40px;
+  height: 100%;
+  width: 33.33%;
+  text-align: center;
   box-sizing: border-box;
-  display: block;
+  display: flex;
   position: relative;
   float: left;
 }
 
 .sitter-show-img {
     border-radius: 50%;
-    height: 100%;
-    width: 100%;
+    height: 225px;
+    width: 225px;
+    display: flex;
+    position: relative;
 }
 
 .sitter-show-top-info-container {
-  width: 800px;
-  height: 225px;
-  border: 1px solid blue;
+  height: 100%;
+  width: 66.66%;
   box-sizing: border-box;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   position: relative;
   float: left;
 }
 
 .sitter-show-name {
+    padding-left: 65px;
+    padding-top: 40px;
     font-weight: 900;
     font-size: 40px;
     font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
     color: #1B1F23;
+    box-sizing: border-box;
 }
 
 .sitter-show-city {
+    padding-left: 65px;
+    padding-top: 10px;
     color: #40484F;
     font-size: 16px;
     font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
     font-weight: 900;
+    box-sizing: border-box;
+}
+
+.sitter-show-responses-container {
+    padding-left: 65px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    display: flex;
+    
 }
 
 .sitter-show-services-container {
-  width: 700px;
-  border: 1px solid blue;
+  width: 25%;
+  padding-left: 50px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
   position: relative;
   float: left;
   background-color: #F4F5F6;
   border-radius: 4px;
-  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 140px;
 }
 
 .sitter-show-services {
+    box-sizing: border-box;
     justify-content: space-between;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.sitter-show-services-one {
+  box-sizing: border-box;
+  width:50%;
+}
+
+.sitter-show-services-two {
+  box-sizing: border-box;
+  width: 50%;
+  text-align: right;
 }
 
 .sitter-show-services-header {
@@ -68,7 +120,6 @@
 }
 
 .sitter-show-services-title {
-    display: flex;
     margin-top: 7px;
     box-sizing: border-box;
     font-weight: 900;
@@ -78,15 +129,14 @@
 }
  
 .sitter-show-services-price {
-    display: flex;
     box-sizing: border-box;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 28px;
     font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
     color: #1B1F23;
 }
+
 .sitter-show-services-description {
-    display: flex;
     margin-top: 9px;
     box-sizing: border-box;
     color: #66727C;
@@ -95,7 +145,6 @@
 }
 
 .sitter-show-services-price-description {
-    display: flex;
     box-sizing: border-box;
     color: #66727C;
     font-size: 14px;
@@ -105,14 +154,168 @@
 .sitter-show-travel-container {
     box-sizing: border-box;
     display: flex;
+    flex-direction: row;
 }
 
+.sitter-show-description-contrainer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 66.66%
+}
+
+.sitter-show-description-header {
+        font-size: 20px;
+        font-weight: 900;
+        font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+        color: #1B1F23;
+        padding-left: 51px;
+        padding-top: 53px;
+}
+
+.sitter-show-description-title {
+        font-size: 20px;
+        font-weight: 900;
+        font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+        color: #1B1F23;
+        padding-left: 51px;
+        padding-top: 20px;
+}
+
+.sitter-show-description-bio {
+    box-sizing: border-box;
+    display: flex;
+    padding-left: 51px;
+    width: 700px;
+    padding-top: 20px;
+            font-size: 14px;
+        font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+        color: #1B1F23;
+}
 
 .highlight-these {
     color: black;
     font-weight: 900;
+    display: flex;
+
 }
 
 .gray-these {
     color: gray;
+    display: flex;
+
+}
+
+.numbers {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    font-weight: none;
+}
+
+.dog {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.lbs {
+    padding-left: 17px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    font-weight: none;
+}
+.sitter-show-bottom-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%
+}
+
+.sitter-show-travel-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-left: 140px;
+}
+
+.sitter-show-travel-header {
+    padding-top: 30px;
+            font-size: 20px;
+        font-weight: 900;
+        font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+        color: #1B1F23;
+}
+
+.sitter-show-travel-pref {
+    padding-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+.sitter-show-booking-button {
+    box-sizing: border-box;
+    
+    width: 100%;
+}
+
+.main-box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.response-icon {
+ color: lightgreen;
+}
+
+.response {
+    color: #66727C;
+    font-size: 14px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+}
+ 
+.sitter-show-response {
+    font-weight: 700;
+        font-size: 14px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    color: #1B1F23;
+}
+.response-box2 {
+    
+    padding-left: 20px;
+}
+
+.sitter-show-sitter-name {
+    padding-top: 20px;
+    padding-left: 65px;
+    padding-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    color: #1B1F23;
+}
+
+.sitter-show-bookingformcontainer {
+    padding-left: 65px;
+}
+
+
+.booksitterbutton {
+    color: #FFFFFF;
+    padding: 10px;
+    background: #14A96D;
+    border: none;
+    border-radius: 4px;
+}
+
+.nobookings {
+    font-weight: 900;
+    font-size: 40px;
+    font-family: Avenir,Helvetica Neue,Calibri,Helvetica,Roboto,sans-serif;
+    color: #1B1F23;
+    padding-left: 50px;
+    padding-top: 10px;
 }

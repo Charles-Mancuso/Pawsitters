@@ -2,7 +2,7 @@ class Api::BookingsController < ApplicationController
 
     def index
         @bookings = Booking.where(user_id: current_user.id)
-        render :index
+        render :index   
     end
 
     def show
@@ -23,8 +23,7 @@ class Api::BookingsController < ApplicationController
 
     def update
         @booking = Booking.find(params[:id])
-
-        if @booking.save(booking_params)
+        if @booking.update(booking_params)
             render 'api/bookings/show'
         else
             render json: @booking.errors.full_messages, status: 422

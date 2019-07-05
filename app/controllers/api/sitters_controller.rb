@@ -20,14 +20,6 @@ class Api::SittersController < ApplicationController
         end
     end
 
-    def update
-
-    end
-
-    def destroy
-
-    end
-
     private
 
     def sitter_params
@@ -55,6 +47,8 @@ class Api::SittersController < ApplicationController
             :is_medium_dog,
             :is_large_dog,
             :is_giant_dog,
+            :response_rate,
+            :response_time,
             :lat,
             :lng
         )

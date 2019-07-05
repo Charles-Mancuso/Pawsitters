@@ -24,5 +24,7 @@ json.extract! sitter,
                 :is_medium_dog,
                 :is_large_dog,
                 :is_giant_dog,
+                :response_rate,
+                :response_time,
                 :lat,
                 :lng
