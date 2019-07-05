@@ -12,20 +12,25 @@ class SitterIndexItem extends React.Component {
     const { sitter } = this.props;
     if (!sitter) return null;
     return (
-      <li>
-        <img src={sitter.image_url}/>
-        <span>{this.props.index + 1}. </span>
-        <Link to={`/sitters/${sitter.id}`}>{sitter.name}</Link>
-        <br />
-        <span>{sitter.title}</span>
-        <br />
-        <span>{sitter.city}, {sitter.state}, {sitter.zip}</span>
-        <br />
-        <span>from</span>
-        <br />
-        <span>${sitter.boarding_price}</span>
-        <br />
-        <span>per night</span>
+      <li className="sitter-index-container">
+        <div className="all-info-container">
+          <div className="sitter-index-img-container">
+            <img className="sitter-index-img" src={sitter.image_url}/>
+          </div>
+          <div className="sitter-index-info-container">
+            <div>
+              <span className="indexnum">{this.props.index + 1}. </span>
+              <span><Link to={`/sitters/${sitter.id}`} className="sitter-index-name">{sitter.name}</Link></span>
+            </div>
+            <span className="sitter-index-title">{sitter.title}</span>
+            <span className="sitter-index-location">{sitter.city}, {sitter.state}, {sitter.zip}</span>
+          </div>
+          <div className="sitter-index-price-container">
+            <span className="pricewords">from</span>
+            <span className="sitter-index-price">${sitter.boarding_price}</span>
+            <span className="pricewords">per night</span>
+          </div>
+        </div>
       </li>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SitterIndexItem from "./sitter_index_item";
+import NavBarContainer from "../nav_bar/nav_bar_container";
 
 class SitterIndex extends React.Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class SitterIndex extends React.Component {
     
     return (
         <div>
+          <NavBarContainer />
             <ul>
                 {sitterLis}
             </ul> 

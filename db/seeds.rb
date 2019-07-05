@@ -21,7 +21,7 @@ ActiveRecord::Base.transaction do
 
   sitter1 = Sitter.create!(
     user_id: charles.id, 
-    image_url: "https://as1.ftcdn.net/jpg/02/61/15/50/500_F_261155049_U8qBLOEQotaL9MIyreMDIYDOfSBWjlS3.jpg",
+    image_url: "https://ksassets.timeincuk.net/wp/uploads/sites/46/2017/03/Priti-Patel-re-sized.jpg",
     name: "Angeli",
     city: "San Jose",
     state: "California",
@@ -197,22 +197,21 @@ ActiveRecord::Base.transaction do
 
     sitter7 = Sitter.create!(
     user_id: jennifer.id, 
-    image_url: "https://static1.squarespace.com/static/5761b510356fb07cfd0a7201/5761bf36893fc0e91240762c/5b569f0f352f53339a672dc0/1535567195344/flower.jpg?format=1000w",
-    name: "Freida",
-    city: "Davis",
+    image_url: "https://www.lorealparisusa.com/~/media/images/lop/wow-data/honorees/2018/loreal-paris-wow-honorees-bios-main-shreyaantha.jpg",
+    name: "Gretta",
+    city: "Los Banos",
     state: "California",
     country: "United States",
-    zip: 95616,
-    title: "book me please I need money for college",
-    sitter_bio: "My name is Freida and I'm so in love with dogs. If you choose me, your dog will be taken
-                 care of as if they were my own. They will be in great hands!",
+    zip: 95600,
+    title: "Dogs are love, dogs are life",
+    sitter_bio: "My name is Gretta and I've been doing Pawsitters for over 2 year now. I love any and all dogs, and I will not say not to sitting your dog. We will have numerous activities throughout the day to make sure they're well exercised. Hope to see you soon!",
     home_type: "House",
     is_boarding: true,
     is_sitting: true,
     is_visiting: true,
     is_daycare: true,
     is_walking: true,
-    boarding_price: 45,
+    boarding_price: 50,
     sitting_price: 30,
     visiting_price: 30,
     daycare_price: 30,
@@ -221,8 +220,8 @@ ActiveRecord::Base.transaction do
     is_medium_dog: false,
     is_large_dog: false,
     is_giant_dog: true,
-    response_time: "one hour or more",
-    response_rate: 33,
+    response_time: "under a minutes",
+    response_rate: 100,
     lat: 36.341000,
     lng: -122.965520
   )
