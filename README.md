@@ -1,12 +1,12 @@
-## Pawsitter
+## PawSitters
 
 [Live Link](https://pawsittersisnotavailable.herokuapp.com/)
 
-Welcome to Pawsitters! Pawsitters is a clone of Rover, a dog-sitting website. Many of the features found in this web-app are similar to the ones found in Rover. You're able to create an account, view all or just one sitter, as well as create, edit, or cancel a booking.
+Welcome to PawSitters! PawSitters is a clone of Rover, a dog-sitting website. Many of the features found in this web-app are similar to the ones found in Rover. You're able to create an account, view all or just one sitter, as well as create, edit, or cancel a booking.
 
 ![alt_text](./app/assets/images/MainPage.png "Main page")
 
-The main page above shows the Pawsitters clickable logo as well as a Demo Login, Sign Up, and Sign In buttons. If currently logged in, the page will welcome the user and allow for them to logout, or view the sitter index or their bookings.
+The main page above shows the PawSitters clickable logo as well as a Demo Login, Sign Up, and Sign In buttons. If currently logged in, the page will welcome the user and allow for them to logout, or view the sitter index or their bookings.
 
 ![alt_text](./app/assets/images/SignUpForm.png "Sign up page")
 
