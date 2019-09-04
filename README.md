@@ -1,5 +1,25 @@
 ## PawSitters
 
+### Technologies used:
+* Ruby on Rails
+* PostgreSQL
+* HTML
+* SCSS/CSS
+  
+### Libraries used:
+* React.js (including react-router-dom)
+* Redux (including react-redux and redux-thunk middleware)
+* jQuery (Ajax calls to my API)
+* Bcrypt (user authorization)
+
+### Features:
+* Sign up with an email, zip, and password
+* Sign in with your email and password
+* Search for a sitter on the sitter index
+* Viewing a sitters profile
+* Booking a sitter
+* Editing your bookings
+
 [Live Link](https://pawsittersisnotavailable.herokuapp.com/)
 
 Welcome to PawSitters! PawSitters is a clone of Rover, a dog-sitting website. Many of the features found in this web-app are similar to the ones found in Rover. You're able to create an account, view all or just one sitter, as well as create, edit, or cancel a booking.
@@ -20,24 +40,6 @@ The sitter show page shows all of the sitters information. It also has a booking
 
 The booking index shows all of the bookings that a particular user has made. If they haven't made any bookings, they prompted to go make some. Users are also allowed to update and delete any of their bookings.
 
-### Technologies used:
-* Ruby on Rails
-* PostgreSQL
-* HTML
-* SCSS/CSS
-  
-### Libraries used:
-* React.js (including react-router-dom)
-* Redux (including react-redux and redux-thunk middleware)
-* jQuery (Ajax calls to my API)
-* Bcrypt (user authorization)
 
-### Features:
-* Sign up with an email, zip, and password
-* Sign in with your email and password
-* Search for a sitter on the sitter index
-* Viewing a sitters profile
-* Booking a sitter
-* Editing your bookings
   
   
