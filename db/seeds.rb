@@ -283,7 +283,7 @@ ActiveRecord::Base.transaction do
 
     sitter10 = Sitter.create!(
     user_id: jennifer.id, 
-    image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1vGKu6zFxIDRhuIvQIIBIzYj3JCBdLDpjp4u5DUJHw_vtnhtNLg",
+    image_url: "https://s3-ap-southeast-1.amazonaws.com/lunchclick/wp-content/uploads/2015/07/3AqQZ.jpg",
     name: "Greg",
     city: "Los Angeles",
     state: "California",
