@@ -53,7 +53,7 @@ ActiveRecord::Base.transaction do
 
   sitter2 = Sitter.create!(
     user_id: jennifer.id, 
-    image_url: "https://bundlestorm.com/wp-content/uploads/2014/10/19-thumb.jpg",
+    image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbTRZh3kvykO0YqlecHCktQKphnjx83JPoze2jazGpNdRPo-kc",
     name: "Eric",
     city: "Santa Clara",
     state: "California",
