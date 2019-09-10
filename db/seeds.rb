@@ -290,7 +290,7 @@ ActiveRecord::Base.transaction do
     country: "United States",
     zip: 95055,
     title: "Hey, I'm Greg",
-    sitter_bio: "My name is Greg. I'm 65 and just recently retired. Looking to live a relaxing life, looking after and taking care of your dogs. I can handle just about anything. Book me before it's too late!",
+    sitter_bio: "My name is Greg. I'm 17 and just recently became a model. Looking to live a relaxing life, looking after and taking care of your dogs. I can handle just about anything. Book me before it's too late!",
     home_type: "House",
     is_boarding: true,
     is_sitting: true,
