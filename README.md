@@ -42,7 +42,7 @@ The booking index shows all of the bookings that a particular user has made. If 
 
 ![alt_text](./app/assests/images/BCryptScreenshot.png "BCrypt code snippet")
 
-This code snippet shows the use of BCrypt which helps to ensure 
+Implemented a user authentication pattern using BCrypt and Ruby on Rails for password hashing.
 
 
   
