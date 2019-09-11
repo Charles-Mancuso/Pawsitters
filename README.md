@@ -40,7 +40,7 @@ The sitter show page shows all of the sitters information. It also has a booking
 
 The booking index shows all of the bookings that a particular user has made. If they haven't made any bookings, they prompted to go make some. Users are also allowed to update and delete any of their bookings.
 
-![alt_text](./app/assests/images/BCryptScreenshot.png "BCrypt code snippet")
+![alt_text](./app/assets/images/BCryptScreenshot.png "BCrypt code snippet")
 
 Implemented a user authentication pattern using BCrypt and Ruby on Rails for password hashing.
 
