@@ -34,7 +34,7 @@ The sign up page features a similar page to Rover's sign up page. It asks a user
 
 ![alt_text](./app/assets/images/SitterShow.png "Sitter show page")
 
-The sitter show page shows all of the sitters information. It also has a booking button with dates on them to book a sitter whenever you want. Also features the nav bar that changes based on whether you're logged in or out.
+The sitter show page shows all of the sitters information. It also has a booking button with dates on them to book a sitter whenever you want.
 
 ![alt_text](./app/assets/images/BookingIndex.png "Booking index page")
 
