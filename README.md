@@ -40,6 +40,10 @@ The sitter show page shows all of the sitters information. It also has a booking
 
 The booking index shows all of the bookings that a particular user has made. If they haven't made any bookings, they prompted to go make some. Users are also allowed to update and delete any of their bookings.
 
+![alt_text](./app/assests/images/BCryptScreenshot.png "BCrypt code snippet")
+
+This code snippet shows the use of BCrypt which helps to ensure 
+
 
   
   
